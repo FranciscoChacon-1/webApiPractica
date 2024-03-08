@@ -20,6 +20,7 @@ namespace webApiPractica.Controllers
         /// <sumary>
         /// EndPoint que retorna el listado de todos los equipos existentes
         /// ESTO ES UNA PRUEBA PARA VER SI NOS SALE LO DEL COMMIT Y ESA PARTE de pruebas
+        /// ahi esta mi prueba
         /// </sumary>
         /// <returns></returns>
         [HttpGet]
