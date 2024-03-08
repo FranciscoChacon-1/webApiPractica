@@ -20,6 +20,7 @@ namespace webApiPractica.Controllers
         /// <sumary>
         /// EndPoint que retorna el listado de todos los equipos existentes
         /// ESTO ES UNA PRUEBA PARA VER SI NOS SALE LO DEL COMMIT Y ESA PARTE de pruebas
+        /// mi parte de la prueba aqui estoy wff dfdfddgd
         /// </sumary>
         /// <returns></returns>
         [HttpGet]
@@ -28,7 +29,7 @@ namespace webApiPractica.Controllers
         {
             List<equipos> listadoEquipo = (from e in _equiposContext.equipos
                                            select e).ToList();
-
+            xxxvxvx
             if (listadoEquipo.Count() == 0)
             {
                 return NotFound();
