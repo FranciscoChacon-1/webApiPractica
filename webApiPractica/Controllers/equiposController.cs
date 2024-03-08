@@ -29,7 +29,7 @@ namespace webApiPractica.Controllers
         [Route("GetAll")]
         public IActionResult Get()
         {
-            List<equipos> listadoEquipo = (from e in _equiposContext.equipos
+            var listadoEquipo = (from e in _equiposContext.equipos
                                            join t in _equiposContext.tipo_equipo
                                            on e.tipo_equipo_id equals t.id_tipo_equipo
                                            join m in _equiposContext.marcas
@@ -38,7 +38,7 @@ namespace webApiPractica.Controllers
                                            on e.estado_equipo_id equals es.id_estados_equipo
                                            select new 
                                            {
-                                               e.id_eqipos,
+                                               e.id_equipos,
                                                e.nombre,
                                                e.descripcion,
                                                e.tipo_equipo_id,
