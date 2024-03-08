@@ -22,6 +22,7 @@ namespace webApiPractica.Controllers
         /// ESTO ES UNA PRUEBA PARA VER SI NOS SALE LO DEL COMMIT Y ESA PARTE de pruebas
         /// ahi esta mi prueba
         /// CAMBIOS PARA HACER OTRA PRUEBA DE LA PRUEBA XD
+        /// conftimando la prueba de la prubeba que hicimos de la prueba
         /// </sumary>
         /// <returns></returns>
         [HttpGet]
