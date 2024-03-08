@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using System.Security.Cryptography;
 namespace webApiPractica.Models
 {
     public class equiposContext : DbContext
@@ -10,5 +11,9 @@ namespace webApiPractica.Models
         }
 
         public DbSet<equipos> equipos { get; set; }
+        public DbSet<estados_equipo> estados_equipo { get; set; }
+        public DbSet<marcas> marcas { get; set; }
+        public DbSet<tipo_equipo> tipo_equipo { get;set; }
+
     }
 }
